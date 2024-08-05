@@ -11,6 +11,9 @@ You were tasked with defining the architecture for your company’s new self-man
 
 Hey. I have set up the Kubernetes environment with 3 masters and 2 nodes to create a multi-master Kubernetes cluster using the “kubeadm” self-manged service.
 
+
+![syself-dev](https://github.com/user-attachments/assets/e94a4bbf-3e3f-4adb-a5b1-1e336b617109)
+
 Pre-requisite:
 
 *   3 machines for master, ubuntu 24.04, 2CPU, 4GB RAM
@@ -350,6 +353,10 @@ YAYY!!We are done with setting high availability k8s cluster with multiple maste
 
 ### **Best Practices for Production Kubernetes Clusters:**
 
+**CSI Driver**:
+
+ CSI drivers provide a standardized interface between Kubernetes and storage systems, enabling dynamic provisioning and management of persistent volumes. CSI enhances Kubernetes' storage capabilities, making the platform more flexible, powerful, and adaptable to various storage needs in both on-premises and cloud environments.
+ 
 **Security:**
 
 Implement RBAC (Role-Based Access Control) for access
@@ -383,3 +390,5 @@ Use a secure secret management solution like HashiCorp Vault.
 **Node Management:**
 
 Implement GitOps practices using tools like ArgoCD or Flux for declarative and version-controlled cluster management
+
+[Link to whole doc](https://docs.google.com/document/d/17nPiqx7nn3Wwj51JWcgsCzt5dGhsSkSOzJujUqgv98k/edit?usp=sharing)
