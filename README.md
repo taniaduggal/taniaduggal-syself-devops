@@ -1,5 +1,3 @@
-
-
 Production-grade Kubernetes environment
 ---------------------------------------
 
@@ -9,7 +7,7 @@ You were tasked with defining the architecture for your company’s new self-man
     
 *   Kubernetes version must be v1.30.3
 
-Hey. I have set up the Kubernetes environment with 3 masters and 2 nodes to create a multi-master Kubernetes cluster using the “kubeadm” self-manged service.
+Hey. I have set up the Kubernetes environment with 3 masters and 2 nodes to create a multi-master Kubernetes cluster using the “kubeadm” self-manged service with the primary requirement of Ubuntu 24.04 as the base OS and Kubernetes version of v1.30.3.
 
 
 ![syself-dev](https://github.com/user-attachments/assets/e94a4bbf-3e3f-4adb-a5b1-1e336b617109)
@@ -350,6 +348,11 @@ worker-2     Ready     <none>    1d         v1.30.3
 
 
 YAYY!!We are done with setting high availability k8s cluster with multiple master and worker nodes with the primary requirement of Ubuntu 24.04 as the base OS and Kubernetes version of v1.30.3.
+
+### **Why we have used more master and worker nodes?**
+
+
+Our Kubernetes cluster has multiple master (control plane) nodes and worker nodes to ensure high availability, fault tolerance, and scalability. This architecture is crucial for production environments as it eliminates single points of failure and enhances overall system reliability. Multiple master nodes provide redundancy for critical cluster components like the API server, scheduler, and controller manager, ensuring continuous cluster operation even if one node fails. Similarly, multiple worker nodes allow for efficient distribution of workloads, improved resource utilization, and the ability to handle node failures.
 
 ### **Best Practices for Production Kubernetes Clusters:**
 
